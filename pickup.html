@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eWaste | Pickup</title>
+    <link rel="stylesheet" href="./pickup.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="brand">e<span>Waste</span></a>
+        <ul id="sidemenu" class="nav-links">
+            <li class="nav-link"><a href="/index.html">Home</a></li>
+            <li class="nav-link has-dropdown"><a href="#"><span>Info</span></a></li>
+            <li class="nav-link"><a href="/pickup.html">Pick UP</a></li>
+            <li class="nav-link"><a href="/login.html"><span>Login</span></a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="container">
+        <form name="submit-to-google-sheet">
+            <h1>Schedule Pick UP</h1>
+            <input type="text" name="FirstName" id="firstName" placeholder="First Name" required />
+            <input type="text" name="LastName" id="lastName" placeholder="Last Name" required />
+            <input type="email" name="Email" id="email" placeholder="Email" required />
+            <input type="text" name="Mobile" id="mobile" placeholder="Mobile" required />
+            <input type="date" name="Pickup Date" id="date" placeholder="Pickup Date" required>
+            <input type="time" name="Pickup Time" id="time" placeholder="Pickup Time" required>
+            <input type="text" name="Pickup Location" id="pickupLocation" placeholder="Pickup Location" required>
+            <h4>Describe Your E Waste Here...</h4>
+            <textarea name="Message" required></textarea>
+            <input type="submit" value="Schedule" id="button" />
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <h1>e<span>Waste</span></h1>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Charges</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> theyounginsider18@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Doonga Boyz Home, Dehradun Uttarakhand</p>
+                <p><i class="fas fa-phone"></i> +91 8923992791</p>
+            </div>
+            <div class="subscribe">
+                <input type="email" name="Message" placeholder="Enter your email" />
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/242a155b7d.js" crossorigin="anonymous" defer></script>
+    <script src="./pickup.js" defer></script>
+</body>
+</html>
